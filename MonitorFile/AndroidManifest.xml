@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.robv.android.xposed.examples.monitorfile"
+    android:installLocation="internalOnly"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="15" />
+
+    <application android:label="Monitor file example" >
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="monitor apk mkdir,write or read file" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="30" />
+    </application>
+
+</manifest>
